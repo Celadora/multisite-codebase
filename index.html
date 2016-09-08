@@ -1,0 +1,12 @@
+<?php
+	$site_index = 0;
+	$prefix = "sites/";
+	$suffix = "/index.html";
+	$sites = [
+		0=> "site_a",
+		1=> "site_b"
+	];
+	
+	echo file_get_contents($prefix.$sites[$site_index].$suffix);
+
+?>
